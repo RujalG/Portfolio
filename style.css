@@ -1,0 +1,699 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: #f2f0ee;
+  color: white;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+.sidebar {
+  width: 340px;
+  border-radius: 1rem;
+  background-color: white;
+  margin-right: 0.5rem;
+}
+
+.main_content {
+  background-color: white;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: auto;
+
+
+}
+
+.main_start {
+  padding: 0 1.5rem 0 1.5rem;
+
+}
+
+.music_player {
+  background-color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  /* color: white; */
+}
+
+.nav {
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80px;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.08);
+}
+
+.nav-opt {
+  line-height: 2.5rem;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  color: #474747;
+  font-weight: 600;
+ font-family: "Edu NSW ACT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-opt:hover {
+  opacity: 1;
+}
+
+.nav-opt i {
+  font-size: 1.25rem;
+}
+
+/* .nav-opt a {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  color: #474747;
+  font-weight: 600;
+} */
+
+.library {
+  background-color: white;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.lib-option img {
+  height: 1.25rem;
+  width: 1.25rem;
+
+}
+
+.icons {
+  font-size: 1.25rem;
+  opacity: 0.7;
+  margin-right: 0.5rem;
+  display: flex;
+
+}
+
+.icons i {
+  opacity: 0.7;
+  margin-right: 1.2rem;
+}
+
+.icons:hover {
+  opacity: 1;
+}
+
+.boxes {
+  background-color: #f2f0ee;
+  color: #474747;
+  height: 4rem;
+  border-radius: 0.7rem;
+  margin: 0.75rem 0 1.15rem 0;
+  padding: 0.75rem 1.25rem;
+}
+
+.box-p1 i {
+  padding-right: 10px;
+
+}
+
+.box-p1 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #474747;
+  font-size: 22px;
+  height: 4rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box-p1:hover {
+  color: black;
+  font-size: 24px;
+}
+
+.box-p2 i {
+  padding-right: 10px;
+
+}
+
+.box-p2 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #474747;
+  font-size: 20px;
+  height: 3rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box-p2:hover {
+  color: black;
+  font-size: 22px;
+}
+
+
+
+.badge {
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: fit-content;
+}
+
+.dark-badge {
+  background-color: #f2f0ee;
+  color: white;
+
+}
+
+.badge:hover {
+  border: none;
+
+  height: 2.3rem;
+  width: fit-content;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.sticky-nav-icons {
+  margin-left: 0.75rem;
+}
+
+.sticky-nav-opt {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+@media(max-width:1000px) {
+  .hide {
+    display: none;
+  }
+
+}
+
+/* .cards{
+  margin-left: 2rem;
+} */
+.card {
+  background-color: #f2f0ee;
+  color: #121212;
+  width: 1190px;
+  height: 640px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  overflow-y: auto;
+  /* margin-top: 0.7rem; */
+}
+
+.card-ind{
+    background-color: #f2f0ee;
+  color: #121212;
+  width: 1190px;
+  height: 640px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-left: 1.5rem;
+}
+.cards-cont {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.card-info {
+  opacity: 0.7;
+  font-size: 0.85rem;
+}
+
+.footer {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 90%;
+  height: 50%;
+  border-top: 1px solid white;
+  opacity: 0.4;
+}
+
+.player-cnt {
+  height: 1rem;
+  margin-right: 1.7rem;
+  opacity: 0.7;
+}
+
+.player-cnt:hover {
+  opacity: 1;
+}
+
+.album {
+  width: 25%;
+}
+
+.player {
+  width: 50%;
+}
+
+.controls {
+  width: 25%;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playback-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 70%;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+  background-color: #ddd;
+  border-radius: 100px;
+  height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  background-color: #1bd760;
+  border-radius: 100%;
+  margin-top: -6px;
+}
+
+.top-bar {
+  background-color: #e3dfdb;
+  height: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.three-circle {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  margin: 10px auto;
+  margin-left: 15px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.contact {
+  padding-right: 20px;
+  color: #484848;
+  font-weight: 300;
+}
+
+.one {
+  background-color: #fe5f5b;
+}
+
+.two {
+  background-color: #fdbe37;
+}
+
+.three {
+  background-color: #30c847;
+}
+
+.intro {
+  display: flex;
+}
+
+.intro-left {
+  width: 600px;
+}
+
+.intro-right {
+  width: 600px;
+}
+
+.intro-right img {
+  height: 650px;
+  width: 650px;
+}
+
+.card-info-intro {
+  opacity: 0.7;
+  font-size: 1.3rem;
+}
+
+.card-title-head {
+  font-size: 32px;
+  color: #6d2827;
+  justify-self: center;
+  margin-bottom: 1px;
+  margin-top: 10px;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.card-info-exp {
+  opacity: 0.7;
+  font-size: 1rem;
+}
+
+.education-card {
+  background: #fff;
+  border-left: 15px solid #555;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  margin-top: 40px;
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+}
+
+.edu-degree {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+.edu-institute {
+  font-size: 18px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.edu-duration {
+  font-size: 16px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.edu-description {
+  font-size: 16px;
+  color: #444;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+
+.contact-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 34px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+
+
+.contact-item {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 18px;
+  color: #444;
+}
+
+.contact-item i {
+  font-size: 22px;
+  color: #555;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover i {
+  transform: scale(1.2);
+  color: black;
+}
+
+.contact-note {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #555;
+  opacity: 0.9;
+}
+
+.card-contact {
+  background-color: white;
+  color: #121212;
+  width: 1190px;
+  height: 640px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 0.7rem; */
+}
+
+.mail {
+  color: #444;
+  text-decoration: none;
+}
+
+.contact-item a {
+  color: #444;
+}
+
+.prj-degree {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+.prj-institute {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.prj-description {
+  font-size: 15px;
+  color: #444;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.prj-card {
+  background: #fff;
+  border-left: 15px solid #555;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  margin-top: 30px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.prj-card:hover {
+  transform: translateY(-5px);
+  border-left: 15px solid #363535;
+}
+
+.project-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      max-width: 900px;
+      height: 550px;
+      margin: auto;
+      padding: 30px 40px;
+      /* transition: transform 0.3s ease; */
+        overflow: auto;
+    }
+
+    /* .project-card:hover {
+      transform: translateY(-5px);
+    } */
+
+    .project-title {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .tagline {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 25px 0;
+      color: black;
+    }
+
+    .features li {
+      font-size: 17px;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .features li:last-child {
+      border-bottom: none;
+    }
+
+    .features li::before {
+      content: "✅";
+      color: #2196F3;
+      font-size: 18px;
+    }
+
+    .tech-stack {
+      margin: 20px 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .prj-links a {
+      display: inline-block;
+       padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* rich blue gradient */
+    }
+    .prj-img{
+      height: 50px;
+      width: 50px;
+    }
+
+    .fa-square-caret-left{
+      padding-left: 60px;
+      font-size: 40px;
+      color: #969595;
+    }
+
+      .fa-square-caret-left:hover{
+      color: #424242;
+    }
+
+
+      .btn-rich-animated {
+        margin-right: 20px;
+    position: relative;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    transition: background 0.3s ease;
+  }
+
+  .btn-rich-animated::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    transform: skewX(-20deg);
+    transition: none;
+  }
+
+  .btn-rich-animated:hover::before {
+    left: 130%;
+    transition: left 0.8s ease;
+  }
+
+    .active {
+      background-color: cornflowerblue;
+      color: white;
+    }
