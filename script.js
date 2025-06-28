@@ -13,3 +13,7 @@
         link.classList.add("active");
       }
     });
+
+     function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("open");
+    }

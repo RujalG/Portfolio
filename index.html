@@ -23,7 +23,8 @@
 
 <body>
     <div class="main">
-        <div class="sidebar">
+         <button class="hamburger" onclick="toggleSidebar()">☰</button>
+        <div class="sidebar" id="sidebar">
             <div class="nav">
                 <div class="nav-opt" style="opacity: 1">
                     Rujal Gandhi
@@ -64,10 +65,14 @@
                 <h2>Portfolio</h2>
                 <div class="cards-cont">
                     <div class="card-ind">
+                           
                         <p class="card-title-head">About me</p>
+                      <div class="small-img">
+                                <img src="./assets/image/photo2.png" alt="Profile Photo">
+                            </div>
                         <div class="intro">
                             
-                            <div class="intro-left">
+                            <div class="intro-left ">
                                 <p class="card-title">Application Development Analyst at Accenture</p>
                                 <p class="card-info-intro">I’m <b> Rujal Harshad Gandhi</b>, a dedicated Software Engineer with over 5 years 
                                     of experience transforming
@@ -82,7 +87,7 @@
                                     behind it all.</p>
                             </div>
                                
-                            <div class="intro-right">
+                            <div class="intro-right hide">
                                 <img src="./assets/image/photo2.png" alt="Profile Photo">
                             </div>
 
@@ -95,5 +100,5 @@
 
     </div>
 </body>
-
+<script src="script.js"></script>
 </html>
