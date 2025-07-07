@@ -96,6 +96,7 @@ a {
   height: 100%;
   margin-top: 0.5rem;
   padding: 0.5rem 0.75rem;
+  /* overflow: auto; */
 }
 
 .option {
@@ -441,6 +442,7 @@ a {
   margin-top: 40px;
   padding: 30px;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .education-card:hover {
@@ -511,6 +513,7 @@ a {
   font-size: 22px;
   color: #555;
   transition: transform 0.3s ease;
+   cursor: pointer;
 }
 
 .contact-item:hover i {
@@ -575,6 +578,7 @@ a {
   margin-top: 30px;
   padding: 20px;
   transition: transform 0.3s ease;
+   cursor: pointer;
 }
 
 .prj-card:hover {
@@ -592,6 +596,7 @@ a {
   padding: 30px 40px;
   /* transition: transform 0.3s ease; */
   overflow: auto;
+   cursor: pointer;
 }
 
 /* .project-card:hover {
@@ -721,6 +726,60 @@ a {
 .small-img img {
   display: none;
 }
+
+.cards-cont-blog{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+.blog {
+  display: flex;
+  direction: column;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.blog-card {
+  height: 50vh;
+  width: 23vw;
+  cursor: pointer;
+    background: #fff;
+  border: 5px solid rgba(60, 57, 52, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-title {
+  font-size: 40px;
+  /* margin-top: 40px; */
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+}
+
+.blog-description {
+  text-align: center;
+  font-size: 21px;
+  color: #444;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+
+
+
 
 @media (max-width: 1000px) {
   /* body {
@@ -905,8 +964,34 @@ display: none ;
 .contact-container h2 {
   font-size: 28px;
 }
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* justify-content: space-around; */
+}
+
+.blog-card {
+/* background-color: black; */
+  height: 25vh;
+  width: 45vw;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-title {
+  font-size: 20px;
+}
+
+.blog-description {
+  font-size: 11px;
+}
+
+.boxes {
+  height: 4rem;
 
 }
 
-
-
+}
